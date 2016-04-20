@@ -3,9 +3,10 @@
         <form class="list"></form>
         <form class="list">
             <div style="text-align:center;">
-                <img src="img/HtD7kkFkTbiFuXZYnbW1_power-button-on-tv-remote.jpg" width="100%" height="auto">
+                <img ng-show="active" src="img/HtD7kkFkTbiFuXZYnbW1_power-button-on-tv-remote.jpg" width="100%" height="auto">
+                <img ng-show="!active" src="img/bluelights.jpg" width="100%" height="auto">
             </div>
-            <ion-toggle toggle-class="" ng-checked="true">Smart Color</ion-toggle>
+            <ion-toggle ng-model="active" toggle-class="" ng-checked="true">Smart Color</ion-toggle>
         </form>
         <div id="tV-markdown5" style="color:#000000;">
             <p>Exposure to blue lights keeps you awake. Our Smart Color feature changes the television colors ever so slightly from blue to orange at night.</p>

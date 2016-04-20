@@ -2,47 +2,49 @@
     <ion-content padding="true" class="has-header">
         <form class="list"></form>
         <form class="list">
-            <ion-toggle toggle-class="toggle-positive" ng-checked="true">Smart lights</ion-toggle>
+            <ion-toggle ng-model="active" toggle-class="" ng-checked="true">Smart lights</ion-toggle>
         </form>
-        <div class="list card">
-            <div class="item item-divider">Dim lights</div>
-            <div class="item item-body">
-                <form class="list">
-                    <label class="item item-select" name="Brighten lights">
-                        <span class="input-label">Dim lights</span>
-                        <select>
-                            <option>15 minutes</option>
-                            <option>30 minutes</option>
-                            <option>1 hour</option>
-                            <option>2 hour</option>
-                            <option>Never</option>
-                        </select>
-                    </label>
-                    <div id="smartLights-markdown2" style="color:#000000;">
-                        <p>You will naturally feel sleepy after lights start dimming.</p>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="list card">
-            <div class="item item-divider">Wake up light</div>
-            <div class="item item-body">
-                <form class="list">
-                    <label class="item item-select" name="Brighten lights">
-                        <span class="input-label">Brighten lights</span>
-                        <select>
-                            <option>15 minutes</option>
-                            <option>30 minutes</option>
-                            <option>1 hour</option>
-                            <option>2 hour</option>
-                            <option>Never</option>
-                        </select>
-                    </label>
-                    <div id="smartLights-markdown7" style="color:#000000;">
-                        <p>Bright lights will naturally wake you up in the morning.</p>
-                    </div>
-                </form>
-            </div>
+        <div ng-class="{disabledSettings: !active}">
+          <div class="list card">
+              <div class="item item-divider">Dim lights</div>
+              <div class="item item-body">
+                  <form class="list">
+                      <label class="item item-select" name="Brighten lights">
+                          <span class="input-label">Dim lights</span>
+                          <select>
+                              <option>15 minutes</option>
+                              <option>30 minutes</option>
+                              <option>1 hour</option>
+                              <option>2 hour</option>
+                              <option>Never</option>
+                          </select>
+                      </label>
+                      <div id="smartLights-markdown2" style="color:#000000;">
+                          <p>You will naturally feel sleepy after lights start dimming.</p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="list card">
+              <div class="item item-divider">Wake up light</div>
+              <div class="item item-body">
+                  <form class="list">
+                      <label class="item item-select" name="Brighten lights">
+                          <span class="input-label">Brighten lights</span>
+                          <select>
+                              <option>15 minutes</option>
+                              <option>30 minutes</option>
+                              <option>1 hour</option>
+                              <option>2 hour</option>
+                              <option>Never</option>
+                          </select>
+                      </label>
+                      <div id="smartLights-markdown7" style="color:#000000;">
+                          <p>Bright lights will naturally wake you up in the morning.</p>
+                      </div>
+                  </form>
+              </div>
+          </div>
         </div>
     </ion-content>
 </ion-view>

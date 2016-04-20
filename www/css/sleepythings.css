@@ -1,0 +1,12 @@
+ion-header-bar {
+  background-color: orange;
+  color: black;
+}
+ion-header-bar > button {
+  padding-right: 10px;
+}
+.disabledSettings {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}

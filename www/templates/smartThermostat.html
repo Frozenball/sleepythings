@@ -2,30 +2,32 @@
     <ion-content padding="true" class="has-header">
         <form class="list"></form>
         <form class="list">
-            <ion-toggle toggle-class="" ng-checked="true">Smart temperature</ion-toggle>
+            <ion-toggle ng-model="active" toggle-class="" ng-checked="true">Smart temperature</ion-toggle>
         </form>
-        <div class="list card">
-            <div class="item item-divider">Night temperature</div>
-            <div class="item item-body">
-                <form class="list">
-                    <ion-item class="range range-positive">18°C
-                        <input type="range" value="30" min="0" max="100">
-                    </ion-item>
-                    <div id="smartThermostat-markdown1" style="color:#000000;">
-                        <p>Experts recommend having temperature as low as 18 degrees when going to bed. A drop in your core temperature induces sleep.</p>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="list card">
-            <div class="item item-divider">Morning temperature</div>
-            <div class="item item-body">
-                <form class="list">
-                    <ion-item class="range range-positive">22°C
-                        <input type="range" value="60" min="0" max="100">
-                    </ion-item>
-                </form>
-            </div>
+        <div ng-class="{disabledSettings: !active}">
+          <div class="list card">
+              <div class="item item-divider">Night temperature</div>
+              <div class="item item-body">
+                  <form class="list">
+                      <ion-item class="range range-positive">{{ night }}°C
+                          <input ng-model="night" type="range" value="18" min="12" max="30">
+                      </ion-item>
+                      <div id="smartThermostat-markdown1" style="color:#000000;">
+                          <p>Experts recommend having temperature as low as 18 degrees when going to bed. A drop in your core temperature induces sleep.</p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="list card">
+              <div class="item item-divider">Morning temperature</div>
+              <div class="item item-body">
+                  <form class="list">
+                      <ion-item class="range range-positive">{{ day }}°C
+                          <input ng-model="day" type="range" value="22" min="12" max="30">
+                      </ion-item>
+                  </form>
+              </div>
+          </div>
         </div>
     </ion-content>
 </ion-view>
