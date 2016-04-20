@@ -10,3 +10,11 @@ ion-header-bar > button {
   pointer-events: none;
   cursor: not-allowed;
 }
+
+.blueLights {
+
+}
+
+#night, #wake {
+  position: absolute;
+}
