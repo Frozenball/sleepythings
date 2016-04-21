@@ -18,3 +18,33 @@ ion-header-bar > button {
 #night, #wake {
   position: absolute;
 }
+
+.bar {
+  background-color: #2c3e50!important;
+  color: white;
+}
+.bar .title {
+  color: white!important;
+}
+.tabs-stable > .tabs {
+  background-color: #2c3e50!important;
+  color: white;
+}
+.tabs-stable .icon, .tabs-stable .tab-title {
+color: white!important;
+}
+.tabs-top.tabs-striped .tab-item {
+margin-top: 0px;
+border-bottom: 2px #2c3e50 solid;
+}
+.tabs-top.tabs-striped .tab-item.tab-item-active,
+.tabs-top.tabs-striped .tab-item.activated {
+margin-top: 0px;
+border-bottom: 2px #2b85c1 solid;
+}
+.tabs {
+border-bottom: 0;
+}
+.bar-stable .button.button-icon {
+color: #bdc3c7;
+}
