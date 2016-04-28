@@ -20,14 +20,14 @@ ion-header-bar > button {
 }
 
 .bar {
-  background-color: #2c3e50!important;
+  background-color: #2c3952!important;
   color: white;
 }
 .bar .title {
   color: white!important;
 }
 .tabs-stable > .tabs {
-  background-color: #2c3e50!important;
+  background-color: #2c3952!important;
   color: white;
 }
 .tabs-stable .icon, .tabs-stable .tab-title {
@@ -35,7 +35,7 @@ color: white!important;
 }
 .tabs-top.tabs-striped .tab-item {
 margin-top: 0px;
-border-bottom: 2px #2c3e50 solid;
+border-bottom: 2px #2c3952 solid;
 }
 .tabs-top.tabs-striped .tab-item.tab-item-active,
 .tabs-top.tabs-striped .tab-item.activated {
@@ -47,4 +47,7 @@ border-bottom: 0;
 }
 .bar-stable .button.button-icon {
 color: #bdc3c7;
+}
+.button.button-positive, .button.button-positive:hover, .button.button-positive:focus {
+  background-color: #26a65d!important;
 }

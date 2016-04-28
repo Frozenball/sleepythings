@@ -1,6 +1,7 @@
 angular.module('app.controllers', [])
 
 .controller('alarmCtrl', function($scope) {
+  $scope.lol = 1;
 })
 
 .controller('statisticsCtrl', function($scope, $timeout) {
